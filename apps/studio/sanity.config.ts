@@ -5,7 +5,7 @@ import {schemaTypes} from './schemaTypes'
 
 export default defineConfig({
   name: 'default',
-  title: 'Your Portfolio',
+  title: 'diime magazine',
 
   projectId: 'v7npmax1',
   dataset: 'production',

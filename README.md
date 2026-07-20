@@ -1,9 +1,32 @@
-# Sanity Clean Content Studio
+# diime magazine
 
-Congratulations, you have now installed the Sanity Content Studio, an open-source real-time content editing environment connected to the Sanity backend.
+Monorepo for the diime magazine app — an iOS/Android-only NYC digital publication with editorial content, curated e-commerce (consigned drops from LES boutiques), RSVP/ticketing, and subscriptions.
 
-Now you can do the following things:
+See the project plan for the full product/technical breakdown (architecture, commerce model, phased roadmap).
 
-- [Read “getting started” in the docs](https://www.sanity.io/docs/introduction/getting-started?utm_source=readme)
-- [Join the Sanity community](https://www.sanity.io/community/join?utm_source=readme)
-- [Extend and build plugins](https://www.sanity.io/docs/content-studio/extending?utm_source=readme)
+## Structure
+
+```
+apps/
+  studio/       Sanity Studio — CMS for stories, editions, shops, drops, events, ads
+  mobile/       React Native app (iOS + Android) — not yet scaffolded
+  staff-web/    Shop-staff pickup verification web app — not yet scaffolded
+services/
+  api/          Application backend (auth, entitlements, orders, fulfillment) — not yet scaffolded
+packages/
+  config/       Shared tsconfig/tooling config
+```
+
+## Tooling
+
+- Package manager: [pnpm](https://pnpm.io) (workspaces) — pinned via `packageManager` in the root `package.json`
+- Task runner: [Turborepo](https://turbo.build)
+
+## Getting started
+
+```
+pnpm install
+pnpm dev      # runs `dev` in every workspace package via Turborepo
+```
+
+To work on a single package: `pnpm --filter @diime/studio dev`
