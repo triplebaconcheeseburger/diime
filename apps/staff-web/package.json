@@ -1,0 +1,11 @@
+{
+  "name": "@diime/staff-web",
+  "private": true,
+  "version": "0.0.0",
+  "license": "UNLICENSED",
+  "scripts": {
+    "dev": "echo 'not yet scaffolded — see apps/staff-web/README.md'",
+    "lint": "echo 'not yet scaffolded'",
+    "typecheck": "echo 'not yet scaffolded'"
+  }
+}
