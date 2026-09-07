@@ -7,7 +7,7 @@ export default defineConfig({
   name: 'default',
   title: 'diime magazine',
 
-  projectId: 'v7npmax1',
+  projectId: 'pxyi76vc',
   dataset: 'production',
 
   plugins: [structureTool(), visionTool()],
